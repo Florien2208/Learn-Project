@@ -36,15 +36,42 @@
 #  conver = a/0.45
 #  print(f"you are {conver} pounds")
 
-i = 0
-while i < 3:
-    y = int(input("gues number but you have three chance:"))
-    i = i + 1
-
-    if y == 9:
-        print("you win !")
+#
+# i = 0
+# while i < 3:
+#     y = int(input("gues number but you have three chance:"))
+#     i = i + 1
+#
+#     if y == 9:
+#         print("you win !")
+#         break
+# else:
+#  print("you fails")
+#     gaming of car
+b = False
+s = True
+while True:
+    a = input(">")
+    if a.upper() == "HELP":
+        print("start - car is ready to start")
+        print("stop  - the car is going to stop")
+        print("quit  - end the game")
+    elif a.upper() == "START":
+        if b:
+            print("car already started")
+        else:
+            b = True
+            s = False
+            print("the car is ready to start")
+    elif a.upper() == "STOP":
+        if s:
+            print("the car has already stopped")
+        else:
+            s = True
+            b = False
+            print("the car stopped")
+    elif a.upper() == "QUIT":
         break
-else:
- print("you fails")
 
-
+    else:
+        print("i do not understand that ...")
