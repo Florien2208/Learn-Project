@@ -47,31 +47,72 @@
 #         break
 # else:
 #  print("you fails")
-#     gaming of car
-b = False
-s = True
-while True:
-    a = input(">")
-    if a.upper() == "HELP":
-        print("start - car is ready to start")
-        print("stop  - the car is going to stop")
-        print("quit  - end the game")
-    elif a.upper() == "START":
-        if b:
-            print("car already started")
-        else:
-            b = True
-            s = False
-            print("the car is ready to start")
-    elif a.upper() == "STOP":
-        if s:
-            print("the car has already stopped")
-        else:
-            s = True
-            b = False
-            print("the car stopped")
-    elif a.upper() == "QUIT":
-        break
 
-    else:
-        print("i do not understand that ...")
+
+
+
+#     gaming of car
+# b = False
+# s = True
+# while True:
+#     a = input(">")
+#     if a.upper() == "HELP":
+#         print("start - car is ready to start")
+#         print("stop  - the car is going to stop")
+#         print("quit  - end the game")
+#     elif a.upper() == "START":
+#         if b:
+#             print("car already started")
+#         else:
+#             b = True
+#             s = False
+#             print("the car is ready to start")
+#     elif a.upper() == "STOP":
+#         if s:
+#             print("the car has already stopped")
+#         else:
+#             s = True
+#             b = False
+#             print("the car stopped")
+#     elif a.upper() == "QUIT":
+#         break
+#
+#     else:
+#         print("i do not understand that ...")
+
+
+# for loop
+# number = [40, 30, 90, 20, 65]
+# total = 0
+# for i in number:
+#     total += i
+# print(f"the total number {total}")
+
+# printing F
+#
+# number = [5, 2, 5, 2, 2]
+# for i in number:
+#     output = ''
+#     for count in range(i):
+#         output += '*'
+#     print(output)
+
+
+
+# letter L
+
+
+# numbers=[2,2,2,2,5]
+# for i in numbers:
+#     output =" "
+#     for count in range(i):
+#         output += "*"
+#     print(output)
+
+# max number
+numbers=[8,3,45,89,23,65,98,43,64]
+max= numbers[0]
+for i in numbers:
+    if i >max:
+        max= i
+print(max)
