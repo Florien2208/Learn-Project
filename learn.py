@@ -136,14 +136,25 @@
 #
 # dictionary
 
-x = (input("phone:"))
-digit ={
-    "1":"one",
-    "2":"two",
-    "3":"three",
-    "4":"four"
+# x = (input("phone:"))
+# digit ={
+#     "1":"one",
+#     "2":"two",
+#     "3":"three",
+#     "4":"four"
+# }
+# output=""
+# for n in x:
+#     output += digit.get(n,"notfound") + " "
+# print(output)
+
+x = input(">")
+word = x.split(" ")
+emojis ={
+    ":)": "sad",
+    "(:": "happy"
 }
 output=""
-for n in x:
-    output += digit.get(n,"notfound") + " "
+for n in word:
+    output += emojis.get(n,n)+ " "
 print(output)
