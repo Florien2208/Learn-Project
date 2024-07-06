@@ -110,9 +110,40 @@
 #     print(output)
 
 # max number
-numbers=[8,3,45,89,23,65,98,43,64]
-max= numbers[0]
-for i in numbers:
-    if i >max:
-        max= i
-print(max)
+#
+# numbers=[8,3,45,89,23,65,98,43,64]
+# max= numbers[0]
+# for i in numbers:
+#     if i >max:
+#         max= i
+# print(max)
+#
+# for x in range(4):
+#     for y in range(4):
+#         for z in range(4):
+#             print(f"{x},{y},{z}")
+
+
+ # remove the duplicate
+
+#
+# numbers = [3, 6, 8, 2, 6, 9, 7, 5, 3, 4]
+# unique=[]
+# for num in numbers:
+#     if num not in unique:
+#         unique.append(num)
+# print(unique)
+#
+# dictionary
+
+x = (input("phone:"))
+digit ={
+    "1":"one",
+    "2":"two",
+    "3":"three",
+    "4":"four"
+}
+output=""
+for n in x:
+    output += digit.get(n,"notfound") + " "
+print(output)
