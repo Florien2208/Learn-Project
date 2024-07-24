@@ -49,8 +49,6 @@
 #  print("you fails")
 
 
-
-
 #     gaming of car
 # b = False
 # s = True
@@ -98,7 +96,6 @@
 #     print(output)
 
 
-
 # letter L
 
 
@@ -124,7 +121,7 @@
 #             print(f"{x},{y},{z}")
 
 
- # remove the duplicate
+# remove the duplicate
 
 #
 # numbers = [3, 6, 8, 2, 6, 9, 7, 5, 3, 4]
@@ -148,13 +145,117 @@
 #     output += digit.get(n,"notfound") + " "
 # print(output)
 
-x = input(">")
-word = x.split(" ")
-emojis ={
-    ":)": "sad",
-    "(:": "happy"
-}
-output=""
-for n in word:
-    output += emojis.get(n,n)+ " "
-print(output)
+
+# using of imojs
+
+#
+# x = input(">")
+# word = x.split(" ")
+# emojis = {
+#     ":)": "sad",
+#     "(:": "happy"
+# }
+# output=""
+# for n in word:
+#     output += emojis.get(n, n) + " "
+# print(output)
+
+#
+# price =[10, 20, 30,80]
+# sum =0
+# for i in price:
+#     sum = sum + i
+# print("the sum is ",sum)
+
+
+# cordinate =(1,4,5)
+# x,y,z,g=cordinate
+# print(g)
+
+
+# function
+#
+# def user(name):
+#     print(f'this is{name}')
+#     print('check the point')
+#
+#
+# print('start')
+# user("dj flo")
+# print("stop")
+#
+# def emojs_converter(x):
+#     word = x.split(" ")
+#     emojis = {
+#         ":)": "sad",
+#         "(:": "happy"
+#     }
+#     output = ""
+#     for n in word:
+#         output += emojis.get(n, n) + " "
+#     return output
+#
+#
+# x = input(">")
+# result = emojs_converter(x)
+
+# classes
+#
+# class Point:
+#     def move(self):
+#         print("move")
+#
+#     def draw(self):
+#         print("draw")
+#     def __init__(self,x,y):
+#         self.x = x
+#         self.y = y
+#
+#
+# p1 = Point(30,70)
+# print(p1.y)
+#
+# class Person:
+#     def __init__(self,name):
+#         self.name = name
+#     def talk(self):
+#         print(f"hi am {self.name}")
+#
+#
+# p = Person("john english")
+# print(p.talk())
+#
+# class Mammals:
+#     def walk(self):
+#         print("walking")
+#
+#
+# class Dog(Mammals):
+#     def bark(self):
+#         print("barking")
+#
+#
+# class Cat(Mammals):
+#     def annoying(self):
+#         print("the cat annoying")
+#
+#
+# p1 = Dog()
+# p1.walk()
+#
+# import utils
+# numbers = [3, 8, 1, 90, 45, 1]
+# print(utils.find_max(numbers))
+#
+# import random
+# names=['john ', 'english', 'flo', 'dj']
+# leader = random.choice(names)
+# print(leader)
+
+# import utils
+#
+# dice = utils.Dice()
+# print(dice.roll())
+from pathlib import Path
+path =Path("ecommerce")
+print(path.exists())
